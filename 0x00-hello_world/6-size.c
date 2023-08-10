@@ -11,7 +11,7 @@ int main(void)
 	long long int u;
 	float z;
 printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(x));
-printf("size of a int: %lu byte(s)\n", (unsigned long)sizeof(y));
+printf("size of an int: %lu byte(s)\n", (unsigned long)sizeof(y));
 printf("size of a long int: %lu byte(s)\n", (unsigned long)sizeof(w));
 printf("size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(u));
 printf("size of a fload: %lu byte(s)\n", (unsigned long)sizeof(z));
