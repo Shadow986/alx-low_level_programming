@@ -15,14 +15,12 @@ int main(void)
 	y = 'A';
 
 	for
-		(c <= 'w') {
+		(c <= 'z'; x++) {
 			putchar(x);
-			x++;
 		}
 	for
-		(d <= 'w') {
+		(d <= 'Z'; y++) {
 			putchar (y);
-			y++;
 		}
 	putchar('\n');
 	return (0);
