@@ -15,13 +15,19 @@ int main(void)
 	y = 'A';
 
 	for
-		(; x <= 'z'; x++) {
+		(; x <= 'z'
+		 ; x++) {
 			putchar(x);
 		}
+	putchar('\n');
+
 	for
-		(; y <= 'Z'; y++) {
+		(; y <= 'Z'
+		 ; y++) {
 			putchar (y);
 		}
+
 	putchar('\n');
+
 	return (0);
 }
