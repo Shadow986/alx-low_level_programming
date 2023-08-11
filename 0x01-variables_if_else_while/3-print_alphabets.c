@@ -9,10 +9,10 @@
 int main(void)
 {
 	char x;
-	char y;
+	char Y;
 
 	x = 'a';
-	y = 'A';
+	Y = 'A';
 
 	for
 		(; x <= 'z'
@@ -23,11 +23,11 @@ int main(void)
 		}
 
 	for
-		(; y <= 'Z'
+		(; Y <= 'Z'
 		 ;)
 		{
-			putchar(y);
-			y++;
+			putchar(Y);
+			Y++;
 		}
 
 	putchar('\n');
