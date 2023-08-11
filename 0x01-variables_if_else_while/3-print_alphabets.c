@@ -16,15 +16,19 @@ int main(void)
 
 	for
 		(; x <= 'z'
-		 ; x++) {
+		 ;)
+		{
 			putchar(x);
+			x++;
 		}
 	putchar('\n');
 
 	for
 		(; y <= 'Z'
-		 ; y++) {
+		 ;)
+		{
 			putchar(y);
+			y++;
 		}
 
 	putchar('\n');
