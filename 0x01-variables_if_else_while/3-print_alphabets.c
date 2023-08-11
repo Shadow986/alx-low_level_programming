@@ -24,7 +24,7 @@ int main(void)
 	for
 		(; y <= 'Z'
 		 ; y++) {
-			putchar (y);
+			putchar(y);
 		}
 
 	putchar('\n');
