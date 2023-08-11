@@ -21,7 +21,6 @@ int main(void)
 			putchar(x);
 			x++;
 		}
-	putchar('\n');
 
 	for
 		(; y <= 'Z'
