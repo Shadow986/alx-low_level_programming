@@ -14,5 +14,7 @@ int main(void)
 			; x++)
 		putchar(x);
 	putchar('.');
+	putchar('\n');
+
 	return (0);
 }
