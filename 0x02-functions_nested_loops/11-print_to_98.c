@@ -30,7 +30,7 @@ void print_to_98(int x)
 			if (z != 98)
 			printf("%d, ", z);
 
-			else 
+			else
 				printf("%d\n", z);
 		}
 	}
