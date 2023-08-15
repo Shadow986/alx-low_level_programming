@@ -10,7 +10,7 @@ void print_times_table(int b)
 	int x;
 	int y;
 	int z;
-	
+
 	if (b < 0 || b > 15)
 		return;
 	for (x = 0; x <= b; x++)
