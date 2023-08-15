@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -13,7 +14,7 @@ void print_to_98(int x)
 
 	if (x <= 98)
 	{
-		for (y = x: y <= 98; y++)
+		for (y = x; y <= 98; y++)
 		{
 			if (y != 98)
 				printf("%d,", y);
