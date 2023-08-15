@@ -15,7 +15,7 @@ void times_table(void)
 	{
 		for (y = 0; y < 10; y++)
 		{
-			z = y * i;
+			z = y * x;
 
 			if (y == 0)
 			{
