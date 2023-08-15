@@ -15,7 +15,7 @@ int main(void)
 	z = 2;
 	sum = 0;
 
-	for (x =1; x <= 33; x++)
+	for (x = 1; x <= 33; x++)
 	{
 		if (y < 4000000 && (y % 2) == 0)
 		{
@@ -26,5 +26,5 @@ int main(void)
 		z = next;
 	}
 	printf("%lu\n", sum);
-	return(0);
+	return (0);
 }
