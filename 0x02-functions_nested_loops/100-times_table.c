@@ -4,16 +4,17 @@
  * print_times_table - Prints the n times table
  * @b: Number of the times table
  */
+
 void print_times_table(int b)
 {
     int x, y, z;
-
+   
     if (b < 0 || b > 15)
         return;
-
+   
     for (x = 0; x <= b; x++)
     {
-        _putchar('0');  /* Print the first cell */
+        _putchar('0');
 
         for (y = 1; y <= b; y++)
         {
