@@ -2,10 +2,9 @@
 
 /**
  * main - Entry point for a program that prints
- * _putchar
- * _putchar - Write charater to the standard output
- * @c: the character to be written
- * Return: Always 0 (success)
+ * the characters using the _putchar function
+ * is witten by mbah
+ * Return: 0
  */
 
 int main(void)
