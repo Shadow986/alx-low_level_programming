@@ -20,10 +20,10 @@ int main(void)
 		fib1 = fib2;
 		fib2 = sum;
 
-		if (count == 49)
-			printf("\n");
+		if (countn < 49)
+			printf(", ");
 		else
-			printf(",");
+			printf("\n");
 	}
 	return (0);
 }
