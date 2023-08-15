@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entery point prints first 50 
+ * main - Entery point prints first 50
  * fibonacci numbers
  * Return: Always 0 (success)
  */
