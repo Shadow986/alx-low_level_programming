@@ -17,20 +17,20 @@ void print_to_98(int x)
 		for (y = x; y <= 98; y++)
 		{
 			if (y != 98)
-				printf("%d,", y);
+				printf("%d, ", y);
 
-			else if (y == 98)
+			else
 				printf("%d\n", y);
 		}
 	}
-	else if (x >= 98)
+	else
 	{
 		for (z = x; z >= 98; z--)
 		{
 			if (z != 98)
-			printf("%d,", z);
+			printf("%d, ", z);
 
-			else if (z == 98)
+			else 
 				printf("%d\n", z);
 		}
 	}
