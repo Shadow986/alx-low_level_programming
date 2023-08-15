@@ -4,22 +4,21 @@
  * main - Entry point for a program that prints
  * _putchar
  * _putchar - Write charater to the standard output
- * @c: The character to be written
- * Return: On success, 1 is 1 is returned. On error, -1 is returned.
+ * @c: the character to be written
+ * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int _putchar(char c)
-	{
-		return (write(1, &c, 1));
-	}
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
 
-	char text[] = "_putchar\n";
-
-	for (int 1 = 0; text[i] != '\0'; i++)
-	{
-		_putchar(text[i]);
-	}
 	return (0);
 }
