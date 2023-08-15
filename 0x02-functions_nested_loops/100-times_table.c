@@ -11,7 +11,7 @@ void print_times_table(int b)
 	int x;
 	int y;
 	int z;
-	
+
 	if (b >= 0 && b <= 15)
 	{
 		for (x = 0; x <= b; x++)
@@ -19,7 +19,7 @@ void print_times_table(int b)
 			for (y = 0; y <= b; y++)
 			{
 				z = y * x;
-				
+
 				if (y == 0)
 				{
 					_putchar(z + '0');
