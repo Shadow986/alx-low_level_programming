@@ -18,7 +18,7 @@ void print_nmuber(int n)
 	{
 		x = n;
 	}
-	if (x /10)
+	if (x / 10)
 	{
 		ptint_number(x / 10);
 	}
