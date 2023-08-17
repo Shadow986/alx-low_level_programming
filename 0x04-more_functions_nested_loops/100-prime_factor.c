@@ -11,10 +11,10 @@ int main(void)
 {
 	int x = 2;
 	long y = 612852475143;
-	
+
 	while (x < y)
 	{
-		while (y % x == 0);
+		while (y % x == 0)
 		{
 			if (y == x)
 			{
