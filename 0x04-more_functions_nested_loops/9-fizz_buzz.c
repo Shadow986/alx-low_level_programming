@@ -3,7 +3,7 @@
 
 /**
  * main - A function that prints numbers from 1 to 100
- * but for multiples of three prints Fizz instead 
+ * but for multiples of three prints Fizz instead
  * of the number
  * Buzz, and for multiples of boththree and five,
  * FizzBuzz.
@@ -16,7 +16,7 @@ int main(void)
 
 	for (x = 1; x <= 100; x++)
 	{
-		if ((x % 3) == 0 && (x % 5) ==0)
+		if ((x % 3) == 0 && (x % 5) == 0)
 			printf("FizzBuzz");
 		
 		else if ((x % 3) == 0)
