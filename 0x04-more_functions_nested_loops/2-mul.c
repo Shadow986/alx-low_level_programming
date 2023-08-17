@@ -2,15 +2,15 @@
 
 /**
  * mul - function that multiplies two integers
- * @x: x - Var
- * @y: y - Var
+ * @a: a - Var
+ * @b: b - Var
  * Return: the sum of the multiplication
  */
 
-int mul(int x, int y)
+int mul(int a, int b)
 {
 	int mul;
 
-	mul = x * b;
+	mul = a * b;
 	return (mul);
 }
