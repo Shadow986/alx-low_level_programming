@@ -22,11 +22,19 @@ int main(void)
 		}
 		else if (x % 5 == 0 && x % 3 != 0)
 		{
-			printf(" FizzBuzz");
+			printf("Buzz");
+		}
+		else if (x % 3 == 0 && x % 5 == 0)
+		{
+			printf("FizzBuzz");
 		}
 		else if (x == 1)
 		{
-			print("%d", x);
+			printf("%d", x);
+		}
+		else
+		{
+			printf("%d", x);
 		}
 	}
 	printf("\n");
