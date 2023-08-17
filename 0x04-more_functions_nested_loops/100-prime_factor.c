@@ -29,7 +29,7 @@ int main(void)
 			x = x / z;
 		}
 	}
-	if (x == 2)
+	if (x > 2)
 		y = x;
 	printf("%ld\n", y);
 	return (0);
