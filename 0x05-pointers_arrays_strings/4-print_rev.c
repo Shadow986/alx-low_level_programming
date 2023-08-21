@@ -10,6 +10,7 @@
 void print_rev(char *s)
 {
 	int x;
+	int y;
 
 	x = 0;
 
