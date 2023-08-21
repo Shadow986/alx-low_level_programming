@@ -11,17 +11,11 @@ int _atoi(char *s)
 	int x, y, no, z, j, git;
 
 	x = 0;
-
 	y = 0;
-
 	no = 0;
-
 	z = 0;
-
 	j = 0;
-
 	git = 0;
-
 
 	while (s[z] != '\0')
 		z++;
@@ -44,14 +38,11 @@ int _atoi(char *s)
 
 			if (s[x + 1] < '0' || s[x + 1] > '9')
 				break;
-			
 			j = 0;
 		}
 		x++;
-
 	}
 	if (j == 0)
 		return (0);
-
 	return (no);
 }
