@@ -10,14 +10,22 @@
 void puts2(char *str)
 {
 	int x = 0;
+	int z = 0;
+	char *y =  str;
+	int j;
 
-	if (str == NULL)
-		return;
-
-	while (str[x] != '\0')
+	while (*y != '\0')
 	{
-		_putchar(str[x]);
-		x += 2;
+		y++;
+		x++;
+	}
+	z = x - 1;
+	for (j = 0; j <= z; j++)
+	{
+		if (j % 2 == 0)
+	{
+		_putchar(str[j]);
+	}
 	}
 	_putchar('\n');
 }
