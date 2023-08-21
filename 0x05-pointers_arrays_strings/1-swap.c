@@ -10,9 +10,12 @@
 
 void swap_int(int *a, int *b)
 {
-	int x;
+	if (a != NULL && b != NULL)
+	{
+		int x;
 
-	x = *a; //assigns the value of the first integer
-	*a = *b;
-	*b = x;
+		x = *a;
+		*a = *b;
+		*b = x;
+	}
 }
