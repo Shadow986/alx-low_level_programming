@@ -13,17 +13,15 @@ char *rot13(char *s)
 	char *begin = s;
 	char upper_bound, lower_bound;
 
-	for (; *ptr != '\0'; ptr++)
+	for (; *x != '\0'; x++)
 	{
 		upper_bound = (*x >= 'A' && *x <= 'Z') ? 'Z' : '\0';
 		lower_bound = (*x >= 'a' && *x <= 'z') ? 'z' : '\0';
 
 		if (upper_bound || lower_bound)
 		{
-			if ((*x <= upper_bound - 13) || (*x <= lower_bound - 13))
-				*x += 13;
-			else
-				*x -= 13;
+			char offset = (*x >= 'a') ? 'a' : 'A';
+			*x = offset + ((*x - offset + 13) % 26);
 		}
 	}
 	return (begin);
