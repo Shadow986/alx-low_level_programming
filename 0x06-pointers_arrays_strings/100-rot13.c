@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * rot13 - a function that encodes a string
- * using the ROT13 cipher
+ * rot13 - a function that encodes a string using the ROT13 cipher
  * @s: input string to be encoded
  * Return: encoded string
  */
@@ -11,18 +10,32 @@ char *rot13(char *s)
 {
 	char *x = s;
 	char *begin = s;
-	char upper_bound, lower_bound;
 
-	for (; *x != '\0'; x++)
+	char offset_upper = 'A' + 13;
+	char offset_lower = 'a' + 13;
+	char upper_overflow = 'Z' - 12;
+	char lower_overflow = 'z' - 12;
+
+	while (*x != '\0')
 	{
-		upper_bound = (*x >= 'A' && *x <= 'Z') ? 'Z' : '\0';
-		lower_bound = (*x >= 'a' && *x <= 'z') ? 'z' : '\0';
+		char upper_check = (*x >= 'A' && *x <= 'Z');
+		char lower_check = (*x >= 'a' && *x <= 'z');
 
-		if (upper_bound || lower_bound)
+		if (upper_check)
 		{
-			char offset = (*x >= 'a') ? 'a' : 'A';
-			*x = offset + ((*x - offset + 13) % 26);
+			if (*x <= upper_overflow)
+				*x += 13;
+			else
+				*x -= 13;
 		}
+		if (lower_check)
+		{
+			if (*x <= lower_overflow)
+				*x += 13;
+			else
+				*x -= 13;
+		}
+		x++;
 	}
 	return (begin);
 }
