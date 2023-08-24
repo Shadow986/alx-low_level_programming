@@ -8,18 +8,18 @@
 
 char *rot13(char *s)
 {
-	int i;
-	int j;
+	int x;
+	int y;
 	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (x = 0; s[x] != '\0'; x++)
 	{
-		for (j = 0; j < 52; j++)
+		for (y = 0; y < 52; y++)
 		{
-			if (s[i] == data1[j])
+			if (s[x] == data1[y])
 			{
-				s[i] = datarot[j];
+				s[x] = datarot[y];
 				break;
 			}
 		}
