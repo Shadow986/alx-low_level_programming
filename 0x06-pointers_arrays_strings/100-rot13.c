@@ -8,35 +8,21 @@
 
 char *rot13(char *s)
 {
-	char *x = s;
-	char *begin = s;
+	int i;
+	int j;
+	char data1[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char datarot[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
-	char offset_upper = 'A' + 13;
-	char offset_lower = 'a' + 13;
-	char upper_overflow = 'Z' - 12;
-	char lower_overflow = 'z' - 12;
-
-	while (*x != '\0')
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		char upper_check = (*x >= 'A' && *x <= 'Z');
-		char lower_check = (*x >= 'a' && *x <= 'z');
-
-		if (upper_check)
+		for (j = 0; j < 52; j++)
 		{
-			if (*x <= upper_overflow)
-				*x += 13;
-			else
-				*x -= 13;
+			if (s[i] == data1[j])
+			{
+				s[i] = datarot[j];
+				break;
+			}
 		}
-		if (lower_check)
-		{
-			if (*x <= lower_overflow)
-				*x += 13;
-			else
-				*x -= 13;
-		}
-		x++;
 	}
-	return (begin);
+	return (s);
 }
-
