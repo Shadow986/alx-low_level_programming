@@ -37,6 +37,7 @@ void print_buffer(char *b, int size)
 		for (i = 0; i < y; i++)
 		{
 			int c = *(b + x + i);
+
 			if (c < 32 || c > 132)
 			{
 				c = '.';
