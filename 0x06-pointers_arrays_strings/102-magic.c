@@ -8,7 +8,7 @@ int main(void)
 
 	y[2] = 1024;
 	p = &x;
-	
+
 	/*
 	 * write your line of code here...
 	 * Remember:
