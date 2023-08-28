@@ -19,7 +19,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (y = 0; accept[y]; y++)
 		{
-			if (s[i] == accept[y])
+			if (s[x] == accept[y])
 			{
 				count++;
 				break;
