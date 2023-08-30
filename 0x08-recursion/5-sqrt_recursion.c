@@ -1,6 +1,16 @@
 #include "main.h"
 
 /**
+ * _sqrt_helper - Recursive helper function
+ * for calculating square root
+ * @n: The number to calculate the square root of
+ * @estimate: The current estimate for the square root
+ * Return: The natural square root of n
+ */
+
+int _sqrt_helper(int n, int estimate)
+
+/**
  * _sqrt_recursion - a function that returns
  * the natural square root of a number
  * @n: The number to calculate the square root of
@@ -25,13 +35,12 @@ int _sqrt_recursion(int n)
 }
 
 /**
- * _sqrt_helper - Recursive helper function
- * for calculating square root
+ * _sqrt_helper - Recursive helper function for calculating square root
  * @n: The number to calculate the square root of
  * @estimate: The current estimate for the square root
+ *
  * Return: The natural square root of n
  */
-
 int _sqrt_helper(int n, int estimate)
 {
 	if (estimate * estimate == n)
