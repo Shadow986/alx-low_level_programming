@@ -1,58 +1,33 @@
 #include "main.h"
 
-/**
- * _sqrt_helper - Recursive helper function
- * for calculating square root
- * @n: The number to calculate the square root of
- * @estimate: The current estimate for the square root
- * Return: The natural square root of n
- */
-
-int _sqrt_helper(int n, int estimate)
+int actual_sqrt_recursion(int n, int x);
 
 /**
  * _sqrt_recursion - a function that returns
  * the natural square root of a number
  * @n: The number to calculate the square root of
- * Return: The natural square root of n, or -1
- * if there's no natural square root
+ * Return: The resulting square root
  */
-
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
-	{
 		return (-1);
-	}
-	else if (n == 0 || n == 1)
-	{
-		return (n);
-	}
-	else
-	{
-		return (_sqrt_helper(n, n / 2));
-	}
+	return (actual_sqrt_recursion(n, 0));
 }
 
 /**
- * _sqrt_helper - Recursive helper function for calculating square root
+ * actual_sqrt_recursion - a function that recurses
+ * to find the natural square root of a number
  * @n: The number to calculate the square root of
- * @estimate: The current estimate for the square root
- *
- * Return: The natural square root of n
+ * @x: Iterator
+ * Return: The resulting square root
  */
-int _sqrt_helper(int n, int estimate)
+
+int actual_sqrt_recursion(int n, int x)
 {
-	if (estimate * estimate == n)
-	{
-		return (estimate);
-	}
-	else if (estimate == 0)
-	{
+	if (x * x > n)
 		return (-1);
-	}
-	else
-	{
-		return (_sqrt_helper(n, estimate - 1));
-	}
+	if (x * x == n)
+		return (x);
+	return (actual_sqrt_recursion(n, x + 1));
 }
