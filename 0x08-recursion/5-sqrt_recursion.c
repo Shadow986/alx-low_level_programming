@@ -38,7 +38,7 @@ int _sqrt_helper(int n, int estimate)
 	{
 		return (estimate);
 	}
-	else if (guess == 0)
+	else if (estimate == 0)
 	{
 		return (-1);
 	}
