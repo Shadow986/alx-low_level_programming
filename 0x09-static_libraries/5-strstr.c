@@ -5,7 +5,8 @@
  * first occurrence of a substring in a string
  * @haystack: The string to search in
  * @needle: The substring to search for
- * Return: A pointer to the first occurrence of the substring, or 0 if not found.
+ * Return: A pointer to the first occurrence of
+ * the substring, or 0 if not found.
  */
 
 char *_strstr(char *haystack, char *needle)
