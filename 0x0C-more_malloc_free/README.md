@@ -1,0 +1,1 @@
+this is a readme file on project 0x0C-more_malloc_free in the alx lower level programming repositorythis is a readme file on project 0x0C-more_malloc_free in the alx lower level programming repository
