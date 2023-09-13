@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
 		if (x < bytes - 1)
 			printf(" ");
 		else
-		       	printf("\n");
+			printf("\n");
 	}
 	return (0);
 }
