@@ -21,8 +21,8 @@ int main(int argc, char *argv[])
 	bytes = atoi(argv[1]);
 	if (bytes < 0)
 	{
-		printf("Error\n")
-			exit(2);
+		printf("Error\n");
+		exit(2);
 	}
 	ptr = (char *)main;
 	for (x = 0; x < bytes; x++)
