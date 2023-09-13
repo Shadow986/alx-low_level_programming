@@ -9,9 +9,10 @@
  * Return: NULL
  **/
 
-void print_name(char *name_to_print, void (*print_function)(char *))
+void print_name(char *name, void (*f)(char *))
 {
-	if (name_to_print == NULL || print_function == NULL)
-		return();
-	print_function(name_to_print);
+	if (name == NULL || f == NULL)
+		return;
+
+	f(name);
 }
