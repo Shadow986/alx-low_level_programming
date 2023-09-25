@@ -1,6 +1,6 @@
-*this is a read me file on 0x13. C more singly linked list*
+#this is a read me file on 0x13. C more singly linked list#
 
-*TASKS*
+#TASKS
 
 0. Print list
 mandatory
