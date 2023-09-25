@@ -1,6 +1,6 @@
-#this is a readme filke for the project 0-print_list.c
+# this is a readme filke for the project 0-print_list.c
 
-#tasks in the project
+# tasks in the project
 
 0. Print list
 mandatory
@@ -53,7 +53,7 @@ Prototype: void free_list(list_t *head);
 file name: `4-free_list.c`
 
 5. The Hare and the Tortoise
-#advanced
+# advanced
 
 
 Write a function that prints You're beat! and yet, you must allow,\nI bore my house upon my back!\n before the main function is executed.
@@ -63,7 +63,7 @@ You are allowed to use the printf function
 file name: `100-first.c`
 
 6. Real programmers can write assembly code in any language
-#advanced
+# advanced
 Write a 64-bit program in assembly that prints Hello, Holberton, followed by a new line.
 
 You are only allowed to use the printf function
