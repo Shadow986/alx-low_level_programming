@@ -1,7 +1,8 @@
 #include "lists.h"
 
 /**
- * print_listint - Prints all the elements of a listint_t list.
+ * print_listint - a function that prints all
+ * the elements of a listint_t list.
  * @h: Pointer to the head of the list.
  * Return: The number of nodes in the list.
  */
