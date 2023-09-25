@@ -1,6 +1,6 @@
-#this is a read me file on 0x13. C more singly linked list#
+# this is a read me file on 0x13. C more singly linked list#
 
-#TASKS
+# TASKS
 
 0. Print list
 mandatory
@@ -17,6 +17,7 @@ Write a function that returns the number of elements in a linked listint_t list.
 
 Prototype: size_t listint_len(const listint_t *h);
 
+2. Add node
 Write a function that adds a new node at the beginning of a listint_t list.
 
 Prototype: listint_t *add_nodeint(listint_t **head, const int n);
