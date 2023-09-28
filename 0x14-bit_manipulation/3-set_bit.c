@@ -6,7 +6,8 @@
  * @index: The index (0-based) of the bit to set.
  * Return: 1 if the operation was successful, or -1 if an error occurred.
  */
-int set_bit(unsigned long int *n, unsigned int index) {
+int set_bit(unsigned long int *n, unsigned int index)
+{
 	if (index < 0 || index >= (sizeof(unsigned long int) * 8))
 	{
 		return (-1);
