@@ -55,6 +55,7 @@ int main(int argc, char *argv[])
 int compute_second(char *str, int len)
 {
 	int comp_1, comp_2, y;
+
 	comp_1 = 0;
 	comp_2 = 0;
 
@@ -78,6 +79,7 @@ int compute_second(char *str, int len)
 int compute_third(char *str, int len)
 {
 	int comp_1, comp_2, y;
+
 	comp_1 = 1;
 	comp_2 = 0;
 
@@ -102,6 +104,7 @@ int compute_fourth(char *str, int len)
 {
 	int comp_1, comp_2;
 	int x, z, rdi10, n;
+
 	comp_1 = str[0];
 	comp_2 = 0;
 
@@ -127,16 +130,17 @@ int compute_fourth(char *str, int len)
 }
 
 /**
- * compute_fifth - Computes the fifth character in the key for the given username
+ * compute_fifth - this will compute the fifth
+ * character in the key for the given username
  * @str: Variable for username
  * @len: Length for username
- *
  * Return: Calculated character
  */
 int compute_fifth(char *str, int len)
 {
 	int comp_1, comp_2;
 	int x, b, k;
+
 	comp_1 = 0;
 	comp_2 = 0;
 
