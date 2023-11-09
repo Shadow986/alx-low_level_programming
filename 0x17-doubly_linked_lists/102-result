@@ -1,0 +1,19 @@
+#!/usr/bin/python3
+
+def is_palindrome(n):
+    """Check if a number is a palindrome."""
+    return str(n) == str(n)[::-1]
+
+def largest_palindrome():
+    """Find the largest palindrome made from the product of two 3-digit numbers."""
+    max_palindrome = 0
+    for i in range(999, 99, -1):
+        for j in range(i, 99, -1):
+            product = i * j
+            if is_palindrome(product) and product > max_palindrome:
+                max_palindrome = product
+    return max_palindrome
+
+# Write the result to a file
+with open('102-result', 'w') as f:
+    f.write(str(largest_palindrome()))
