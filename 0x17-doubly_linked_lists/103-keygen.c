@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-		username = "julien";
+		username = argv[1];
 		while (username[unknown_len] != '\0')
 			unknown_len++;
 
@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		key[4] = passwd_ptr[compute_fifth(username, unknown_len)];
 		key[5] = passwd_ptr[compute_sixth(username, unknown_len)];
 
-		printf("%s\n", key);
+		printf("Congrats!\n");
 	}
 	else
 	{
