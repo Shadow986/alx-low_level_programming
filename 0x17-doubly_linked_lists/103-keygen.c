@@ -34,7 +34,7 @@ int main(int argc, char *argv[])
 		key[4] = passwd_ptr[compute_fifth(username, unknown_len)];
 		key[5] = passwd_ptr[compute_sixth(username, unknown_len)];
 
-		printf("Congrats!\n");
+		printf("%s\n", key);
 	}
 	else
 	{
