@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 2)
 	{
-		username = argv[1];
+		username = "julien";
 		while (username[unknown_len] != '\0')
 			unknown_len++;
 
