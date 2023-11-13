@@ -1,7 +1,5 @@
 #!/bin/bash
-
-# Create a file with the desired numbers
-echo "9 8 10 24 75 9" > numbers.txt
-
-# Run the gm program
-./gm $(cat numbers.txt)
+echo '#include <stdlib.h>' > rand.c
+echo 'int rand(void) { static int i; return ++i % 76; }' >> rand.c
+gcc -shared -o rand.so rand.c
+export LD_PRELOAD=$PWD/rand.so
