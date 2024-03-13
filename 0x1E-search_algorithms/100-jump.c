@@ -1,47 +1,40 @@
 #include "search_algos.h"
+#include <math.h>
 
 /**
- * print_array - a function that prints an array of integers
- * @array: The array to be printed
- * @size: Number of elements in @array
- */
-void print_array(const int *array, size_t size)
-{
-	size_t i;
-
-	printf("Value checked array[%lu] = [%d]\n", i, array[i]);
-}
-
-/**
- * jump_search - a function that Searches for
- * a value in a sorted array of integers
- * @array: Pointer to the first element of the array to search in
- * @size: Number of elements in array
- * @value: Value to search for
- * Return: First index where value is located,
- * or -1 if value is not present or if array is NULL
+ * jump_search - searches for a value in a sorted array
+ *	Jump search algorithm
+ *
+ * @array: pointer to the first element of the array
+ * @size: no. of elements in the array
+ * @value: value to search for
+ *
+ * Return: index where the value is located,
+ *	or -1 if the value is not present or if the array is NULL.
  */
 int jump_search(int *array, size_t size, int value)
 {
-	size_t i, jump;
+	size_t step = sqrt(size);
+	size_t i, jump_step;
 
-	if (!array)
+	if (array == NULL || size == 0)
 		return (-1);
-	jump = sqrt(size);
-	for (i = 0; i < size; i += jump)
+
+	for (i = jump_step = 0; jump_step < size && array[jump_step] < value;)
 	{
-		print_array(array + i, size - i);
-		if (array[i] >= value)
-		{
-			printf("Value found between indexes [%lu] and [%lu]\n", i - jump, i);
-			for (size_t j = i - jump; j <= i; j++)
-			{
-				print_array(array + j, size - j);
-				if (array[j] == value)
-					return (j);
-			}
-			break;
-		}
+		printf("Value checked array[%ld] = [%d]\n",
+				jump_step, array[jump_step]);
+		i = jump_step;
+		jump_step += step;
 	}
-	return (-1);
+
+	printf("Value found between indexes [%ld] and [%ld]\n", i, jump_step);
+
+	jump_step = jump_step < size - 1 ? jump_step : size - 1;
+	for (; i < jump_step && array[i] < value; i++)
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+
+	printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+
+	return (array[i] == value ? (int)i : -1);
 }
